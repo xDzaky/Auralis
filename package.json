@@ -1,0 +1,31 @@
+{
+  "name": "auralis",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pendamping digital interaktif untuk anak autis Indonesia",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "canvas-confetti": "^1.9.3",
+    "face-api.js": "^0.22.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.6.4",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "jsdom": "^29.0.1",
+    "vite": "^8.0.1",
+    "vitest": "^4.1.2"
+  }
+}

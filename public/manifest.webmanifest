@@ -1,0 +1,18 @@
+{
+  "name": "Auralis",
+  "short_name": "Auralis",
+  "description": "Pendamping digital interaktif untuk latihan emosi anak autis Indonesia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6fbff",
+  "theme_color": "#38b6a8",
+  "lang": "id-ID",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

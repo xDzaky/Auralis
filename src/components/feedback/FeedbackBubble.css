@@ -1,0 +1,62 @@
+.feedback-bubble {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.feedback-bubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.feedback-praise {
+  background: rgba(56, 182, 168, 0.18);
+  color: var(--color-primary-light);
+}
+
+.feedback-instruction {
+  background: rgba(253, 203, 110, 0.15);
+  color: var(--color-accent-orange);
+  border-color: rgba(253, 203, 110, 0.2);
+}
+
+.feedback-success {
+  background: rgba(95, 210, 194, 0.18);
+  color: var(--color-accent-green);
+  border-color: rgba(95, 210, 194, 0.22);
+}
+
+.feedback-retry {
+  background: rgba(116, 185, 255, 0.15);
+  color: var(--color-accent-blue);
+  border-color: rgba(116, 185, 255, 0.2);
+}
+
+.feedback-emoji {
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.feedback-text {
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .feedback-bubble {
+    max-width: 90vw;
+    font-size: var(--font-size-base);
+    padding: var(--space-sm) var(--space-lg);
+  }
+}
